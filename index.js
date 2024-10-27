@@ -66,6 +66,10 @@ function initializeTileAnimations() {
 
   flipbutton.addEventListener("click", () => {
     flipAllTiles(tiles);
+
+    setTimeout(() => {
+      flipbutton.classList.toggle("active");
+    }, 850);
   });
 }
 
